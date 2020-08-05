@@ -1,0 +1,132 @@
+footer {font-family: $rimary-font;
+    color: $footer-text-color;
+    background-color: $footer-fon-color;
+     font-size: 14px;
+  line-height: 1.19;
+}
+
+
+
+address {font-style: inherit;}   
+
+.podval {margin-top: 20px;
+    margin-bottom: 0;
+    line-height: 1.7;}
+
+
+.link-footer {padding-left: 0;
+        margin-top: 9px;
+
+.adres-footer {color: $color-adress-footer; 
+            line-height: 1.7; 
+                 }        
+    }    
+
+
+.container-foter {background-color: red;
+    padding-top: 60px;
+@media screen and (max-width: 1199px) {
+text-align: center;
+justify-content: space-around;
+
+@media  screen and (min-width: $tablet) {
+display: flex;
+align-items: baseline;
+
+@media screen and (max-width: 1199px) {
+flex-wrap: wrap;
+
+}}}}      
+
+
+
+.seti-footer {display: flex;
+        justify-content: center;
+        @extend %ul;
+ 
+        
+.soc-seti + .soc-seti {margin-left: 10px;} } 
+
+
+.soc-seti > a {color: $color-adress-footer;}
+
+.footer-seti {fill: #FFFFFF}
+
+
+.link-seti {
+   @include centerFlex;
+    height: 44px;
+    width: 44px;
+    background-color: gray;
+    background-size: 20px;
+    background-repeat: no-repeat;
+     border-radius: 50%;
+      transition: $transition-valuse;
+
+&:hover {background-color: $active-button-color;}      
+     }
+
+.copirayt {
+        color: $style-text-color; 
+ text-align: center;
+ margin-bottom: 0;
+ }     
+
+
+
+ .subscription
+{display: flex;
+    flex-direction: column;
+@media screen and (max-width: 1199px) {
+align-items: center;
+ margin-top: 60px;}
+}
+
+
+
+
+  .button-form {
+    @include centerFlex;
+    width: 200px;
+    height: 50px;
+font-size: 16px;
+font-weight: 700;
+color: $button-text-active;
+background-color: $active-button-color;
+border-color: $active-button-color;
+border-radius: 4px; 
+box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+margin-left: auto;
+margin-right: auto;
+@media screen and (max-width: 1199px)
+{margin-top: 30px;}}
+
+.imput-mail {
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+margin-right: 12px;
+color: $button-text-active;
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.icon-form {margin-left: 10px;}
+
+
+.union {text-align: center;
+    
+}
+
+.container-foter a {color: $button-text-active;}
+
+@media screen and (min-width: $desktop) {
+.container-foter {display: flex;
+align-items: baseline;
+} 
+.union {margin-left: 69px;}
+.subscription {margin-left: 94px;}
+.footer-form {display: flex;}}

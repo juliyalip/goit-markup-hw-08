@@ -1,0 +1,36 @@
+@media screen and (max-width: 1199px)
+{.transparent-works {display: none;}}
+
+.works {@include centerFlex;
+    padding-left: 0;
+margin-top: 0;
+margin-bottom: 94px;
+
+
+&-list {width: 370px;
+position: relative;
+}
+
+&-list + &-list {margin-left: 30px;}
+
+&-title {
+    position: absolute;
+    bottom: 0;
+    color: $button-text-active;
+    background-color: $text-fon;
+   padding-top: 27px;
+padding-bottom: 27px;
+width: 100%;
+margin: 0;
+text-transform: uppercase;
+font-weight: 700;
+line-height: 1.14;
+font-size: 14px;
+}   }
+
+
+
+  
+ 
+
+

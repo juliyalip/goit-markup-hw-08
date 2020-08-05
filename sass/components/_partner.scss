@@ -1,0 +1,79 @@
+
+.komanda {background-color: $section-partner-color;
+    text-align: center; 
+
+}
+
+
+
+
+.partner {display: flex;;
+    padding-bottom: 60px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+@media screen and (max-width: 767px) {
+    flex-direction: column;}
+@media screen and (max-width: 1199px) {
+ flex-wrap: wrap;
+}} 
+
+
+
+.partner-list {width: 100%;
+&:not(:last-child) {margin-bottom: 30px;}
+
+@media screen and (min-width: $tablet) {
+width: calc((100% - 30px) / 2); 
+}
+
+@media screen and (max-width: 1199px) {
+&:not(:nth-child(2n)) {margin-right: 30px;}    }
+@media  screen and (min-width: $desktop) {
+width: calc((100% - 90px) / 4); 
+& + & {margin-left: 30px;}  
+}   } 
+
+
+
+.fon-partner {background-color: $primary-fon;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.14), 0 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0 0 4px 4px;
+
+.title-partner { display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 1.9;} 
+.social-links { margin-top: 10px;
+            margin-bottom: 16px;
+             line-height: 1.8; 
+            color: $style-text-color;} }  
+         
+.seti {@include centerFlex;
+                padding-left: 0;
+                padding-bottom: 24px;
+&-partner + &-partner {margin-left: 10px;}   }            
+
+.fon-s {
+    @include centerFlex;
+    height: 44px;
+    width: 44px;
+    background-color: inherit;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+
+fill: #AFB1B8;
+transition: background-color $transition-valuse,
+fill $transition-valuse;
+&:hover,
+&:focus {background: $active-button-color;
+    fill: $button-text-active;}}
+
+
+
+
+
+

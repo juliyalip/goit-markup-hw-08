@@ -1,0 +1,64 @@
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+
+body { color: $primary-text-color;
+font-family: $rimary-font;
+font-size: 14px;
+background-color: $primary-fon;
+}
+
+li {list-style: none;
+    margin-left: 0;}
+
+img {display: block;}    
+
+%transparent {margin: 0;
+    height: 0;
+    color: transparent;}
+    
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+
+       @media screen and (min-width: $mobile)   
+        {width: 480px;} 
+
+
+      @media screen and (max-width: 767px) 
+      {width: 480px}  
+      
+
+       @media screen and (min-width: $tablet)
+      {width: 768px;}  
+      
+
+        @media screen and (min-width: $desktop) 
+         {width: 1200px;}    }
+   
+      
+
+
+%ul {padding-left: 0;}      
+
+
+
+.center-text {text-align: center;}
+
+@mixin centerFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+    }  
+    
+.title-section   {
+        margin-top: 94px;
+        margin-bottom: 50px;
+    
+        font-size: 36px;
+           display: inline-block;
+        line-height: 1.7;
+        }    
+   

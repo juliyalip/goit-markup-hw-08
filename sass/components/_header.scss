@@ -1,0 +1,129 @@
+
+.container-header { 
+    display: flex;
+    align-items: center;
+   padding-left: 15px;
+padding-right: 15px;
+background-color: red;
+max-height: 80px;
+@media screen and (min-width: $mobile) {
+    width: $mobile;
+    position: relative;
+      justify-content: space-between;} 
+
+@media screen and (min-width: $tablet) {
+    width: $tablet;
+    justify-content: flex-start;
+    
+}
+@media screen and (min-width: $desktop) {
+ width: $desktop;   
+}}
+
+
+
+
+
+.menu-button {display: inline-block;
+padding: 0;
+border: none;
+background-color: transparent;
+
+@media screen and (min-width: $tablet) {
+    display: none;}
+} 
+
+
+
+.menu-button .icon-cross {display: none;}
+.menu-button.is-open .icon-cross {display: block;}
+.menu-button.is-open .icon-menu {display: none;}
+.icon-cross:hover, .icon-cross:focus,
+.icon-menu:hover, .icon-menu:focus {fill: #2196F3;}
+
+
+
+
+.menu-mobile {
+background-color: yellow;
+text-align: center;
+@media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; }
+&.is-open {display: block;}
+@media screen and (min-width: $tablet) {
+max-height: 80px;
+}
+}
+
+
+
+.navigac {
+        position: relative;
+        display: inline-block;
+        padding-bottom: 8px;
+        line-height: 1.5;
+    transition: color $transition-valuse;
+
+&:hover,
+&:focus {color: $active-text-color;
+    fill: $active-text-color;
+         }}    
+
+.site-nav .current {color: $active-text-color;
+&:after {
+        content: '';
+     position: absolute;
+     line-height: 80px;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 4px;
+     background-color: $active-text-color;
+     border-radius: 2px;}   }    
+
+     
+
+.contact {
+        color: $style-text-color;
+        line-height: 1.17;
+        font-weight: bold;
+        font-size: 18px;
+        fill: $style-text-color;
+        transition: fill $transition-valuse,
+        color $transition-valuse;
+    
+&:hover,
+&:focus {color: $active-text-color;
+    fill: $active-text-color;
+         }    }     
+
+@media screen and (min-width: $mobile)
+{.item {
+    font-family: $rimary-font;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.7;
+&:not(:last-child) {margin-bottom: 40px;}}
+.site-nav {margin-top: 60px;
+margin-bottom: 60px;}
+.adres-item:not(:last-child) {margin-bottom: 16px;}
+.adres-nav {margin-bottom: 60px;}}
+
+
+@media screen and (min-width: $tablet)
+{  .main-nav {display: flex;
+max-height: inherit;}
+
+    .item {font-size: 14px;}
+      .site-nav {display: flex; 
+        margin-top: 0;
+        margin-bottom: 0;
+       align-items: center;
+        background-color: greenyellow;
+       .item + .item {margin-left: 50px;}}}
+                       
+     
