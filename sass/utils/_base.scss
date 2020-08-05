@@ -26,11 +26,7 @@ img {display: block;}
        @media screen and (min-width: $mobile)   
         {width: 480px;} 
 
-
-      @media screen and (max-width: 767px) 
-      {width: 480px}  
-      
-
+       
        @media screen and (min-width: $tablet)
       {width: 768px;}  
       
@@ -38,7 +34,8 @@ img {display: block;}
         @media screen and (min-width: $desktop) 
          {width: 1200px;}    }
    
-      
+%margin {margin-top: 0;
+margin-bottom: 0;}      
 
 
 %ul {padding-left: 0;}      
