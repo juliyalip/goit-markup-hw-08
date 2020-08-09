@@ -367,6 +367,7 @@ li {
 
 img {
   display: block;
+  width: 100%;
 }
 
 .title-advantage {
@@ -380,6 +381,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  border: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -469,7 +471,7 @@ img {
 .menu-button {
   display: inline-block;
   padding: 0;
-  border: none;
+  border: 1px solid grey;
   background-color: transparent;
 }
 
@@ -513,12 +515,6 @@ img {
 
 .menu-mobile.is-open {
   display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-mobile {
-    max-height: 80px;
-  }
 }
 
 .navigac {
@@ -1090,7 +1086,6 @@ address {
 }
 
 .container-foter {
-  background-color: red;
   padding-top: 60px;
 }
 
@@ -1242,6 +1237,12 @@ address {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .union {
+    margin-left: 69px;
+  }
+}
+
 .container-foter a {
   color: #FFFFFF;
 }
@@ -1254,9 +1255,6 @@ address {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-  }
-  .union {
-    margin-left: 69px;
   }
   .subscription {
     margin-left: 94px;

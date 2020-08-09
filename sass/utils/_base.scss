@@ -11,7 +11,11 @@ background-color: $primary-fon;
 li {list-style: none;
     margin-left: 0;}
 
-img {display: block;}    
+img {display: block;
+    width: 100%;
+}    
+
+
 
 %transparent {margin: 0;
     height: 0;
@@ -22,6 +26,7 @@ img {display: block;}
         margin-right: auto;
         padding-left: 15px;
         padding-right: 15px;
+        border: 1px solid red;
 
        @media screen and (min-width: $mobile)   
         {width: 480px;} 

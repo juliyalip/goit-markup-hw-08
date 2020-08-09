@@ -23,7 +23,7 @@ address {font-style: inherit;}
     }    
 
 
-.container-foter {background-color: red;
+.container-foter {
     padding-top: 60px;
 @media screen and (max-width: 1199px) {
 text-align: center;
@@ -118,6 +118,9 @@ padding-right: 16px;
 
 
 .union {text-align: center;
+@media screen and (min-width: $desktop){
+  margin-left: 69px;  
+}    
     
 }
 
@@ -127,6 +130,5 @@ padding-right: 16px;
 .container-foter {display: flex;
 align-items: baseline;
 } 
-.union {margin-left: 69px;}
 .subscription {margin-left: 94px;}
 .footer-form {display: flex;}}

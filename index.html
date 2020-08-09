@@ -13,7 +13,7 @@
                     <div class="container-header">
                         <a href="#" class="logo-navigac"><span>Web</span>Studio</a>
  <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-mobile" data-menu-button>
-  <svg aria-label="переключатель мобильного меню" width="19px" height="19px" aria-expanded="false" aria-expanded="true">
+  <svg aria-label="переключатель мобильного меню" width="19px" height="19px" aria-expanded="false">
         <use class="icon-cross" href="./images/symbol-defs.svg#cross"></use>
        <use class="icon-menu" href="./images/symbol-defs.svg#menu"></use>
      </svg>
@@ -169,21 +169,25 @@
             </div>
            </section>
     
-               
+     <!--  чем мы занимаемся   -->          
     <div class="container">
         <section class="center-text transparent-works">
             <p class="title-section"><strong>Чем мы занимаемся</strong></p>
             <ul class="works">
            <li class="works-list">
-                <img src="images/destop.jpg" alt="desktop"/>
+                <img srcset="./images/destop.jpg, ./images/destop@2x.jpg 2x"
+                src="images/destop.jpg" alt="destop"/>
                 <h2 class="works-title">Десктопные приложения</h2>
             </li>  
             <li class="works-list">            
-                <img src="images/mobi.jpg" alt="mobi"/>
+                <img 
+                srcset="./images/mobi.jpg, ./images/mobi@2x.jpg 2x" 
+                src="images/mobi.jpg" alt="mobi"/>
                 <h2 class="works-title">Мобильные приложения</h2>
             </li>
             <li class="works-list">
-                <img src="images/dizain.jpg" alt="dizain">
+                <img srcset="./images/dizain.jpg, ./images/dizain@2x.jpg 2x" 
+                src="images/dizain.jpg" alt="dizain">
                 <h2 class="works-title">Дизайнерские решения</h2>
             </li>
             </ul>
@@ -197,7 +201,35 @@
             <ul class="partner">
                 <li class="partner-list">  
                     <div class="fon-partner">
-                    <img src="images/djon.jpg" alt="Николай Кучеренко" width="100%"/>
+                        <picture>
+                            <source
+                              srcset="./images/djon.webp"
+                              media="(min-width: 768px)"
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="./images/djon.jpg"
+                              media="(min-width: 768px)"
+                              type="image/jpg"
+                            />
+                      
+                            <source
+                              srcset="./images/djon@2x.webp"
+                              media="(min-width: 480px)"
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="./images/djon@2x.jpg"
+                              media="(min-width: 480px)"
+                              type="image/jpg"
+                            />
+                      
+                            <source srcset="./images/djon.webp" type="image/webp" />
+                            <source srcset="./images/djon.jpg" type="image/jpg" />
+                      
+                            <img src="./images/djon.jpg" alt="Николай Кучеренко" />
+                          </picture>
+
                     <h3 class="title-partner">Николай Кучеренко</h3>
                     <p class="social-links">Product Designer</p>
                        <ul class="seti">
@@ -226,7 +258,34 @@
 
                 <li class="partner-list">
                     <div class="fon-partner">
-                        <img src="images/marta.jpg" alt="Ольга Иванова" width="100%"/>
+                        <picture>
+                            <source
+                              srcset="./images/marta.webp"
+                              media="(min-width: 768px)"
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="./images/marta.jpg"
+                              media="(min-width: 768px)"
+                              type="image/jpg"
+                            />
+                      
+                            <source
+                              srcset="./images/marta@2x.webp"
+                              media="(min-width: 480px)"
+                              type="image/webp"
+                            />
+                            <source
+                              srcset="./images/marta@2x.jpg"
+                              media="(min-width: 480px)"
+                              type="image/jpg"
+                            />
+                      
+                            <source srcset="./images/marta.webp" type="image/webp" />
+                            <source srcset="./images/marta.jpg" type="image/jpg" />
+                      
+                            <img src="./images/marta.jpg" alt="Ольга Иванова" />
+                          </picture>
                     <h3 class="title-partner">Ольга Иванова</h3>
                      <p class="social-links">Frontend Developer</p>
                      <ul class="seti">
@@ -253,7 +312,34 @@
                 </li>   
                 <li class="partner-list">            
                 <div class="fon-partner">
-                    <img src="images/robert.jpg" alt="Андрей Шевченко" width="100%"/>
+                    <picture>
+                        <source
+                          srcset="./images/robert.webp"
+                          media="(min-width: 768px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="./images/robert.jpg"
+                          media="(min-width: 768px)"
+                          type="image/jpg"
+                        />
+                  
+                        <source
+                          srcset="./images/robert@2x.webp"
+                          media="(min-width: 480px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="./images/robert@2x.jpg"
+                          media="(min-width: 480px)"
+                          type="image/jpg"
+                        />
+                  
+                        <source srcset="./images/robert.webp" type="image/webp" />
+                        <source srcset="./images/robert.jpg" type="image/jpg" />
+                  
+                        <img src="./images/robert.jpg" alt="Андрей Шевченко" />
+                      </picture>
                 <h3 class="title-partner">Андрей Шевченко</h3>
                 <p class="social-links">Marketing</p>
                 <ul class="seti">
@@ -280,7 +366,34 @@
                 </li>
                 <li class="partner-list">
                 <div class="fon-partner">
-                    <img src="images/martin.jpg" alt="Иван Николаев" width="100%"/>
+                    <picture>
+                        <source
+                          srcset="./images/martin.webp"
+                          media="(min-width: 768px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="./images/martin.jpg"
+                          media="(min-width: 768px)"
+                          type="image/jpg"
+                        />
+                  
+                        <source
+                          srcset="./images/martin@2x.webp"
+                          media="(min-width: 480px)"
+                          type="image/webp"
+                        />
+                        <source
+                          srcset="./images/martin@2x.jpg"
+                          media="(min-width: 480px)"
+                          type="image/jpg"
+                        />
+                  
+                        <source srcset="./images/martin.webp" type="image/webp" />
+                        <source srcset="./images/martin.jpg" type="image/jpg" />
+                  
+                        <img src="./images/martin.jpg" alt="Иван Николаев" />
+                      </picture>
                 <h3 class="title-partner">Иван Николаев</h3>
                 <p class="social-links">UI Designer</p>
                 <ul class="seti">

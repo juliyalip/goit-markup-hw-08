@@ -407,7 +407,7 @@ img {
   margin-bottom: 0;
 }
 
-.site-nav, .adres-nav, .vse-knopki, .galeri, .seti-footer {
+.site-nav, .adres-nav, .galeri, .seti-footer {
   padding-left: 0;
 }
 
@@ -471,7 +471,7 @@ img {
 .menu-button {
   display: inline-block;
   padding: 0;
-  border: 1px solid grey;
+  border: none;
   background-color: transparent;
 }
 
@@ -515,6 +515,12 @@ img {
 
 .menu-mobile.is-open {
   display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    max-height: 80px;
+  }
 }
 
 .navigac {
@@ -680,22 +686,6 @@ span {
   margin-top: 94px;
 }
 
-@media screen and (max-width: 767px) {
-  .vse-knopki {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
-@media screen and (max-width: 767px) and (max-width: 767px) {
-  .vse-knopki .list-vse:not(:last-child) {
-    margin-bottom: 15px;
-  }
-}
-
 .vse-knopki .list-vse + .list-vse {
   margin-left: 8px;
 }
@@ -730,9 +720,6 @@ span {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
   .galeri-list {
     position: relative;
@@ -1041,4 +1028,4 @@ address {
     display: flex;
   }
 }
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=peredelka.css.map */

@@ -35,7 +35,7 @@ margin-right: auto;
 
 .menu-button {display: inline-block;
 padding: 0;
-border: none;
+border: 1px solid grey;
 background-color: transparent;
 
 @media screen and (min-width: $tablet) {
@@ -64,9 +64,7 @@ background-color: $primary-fon;
     left: 0;
     width: 100%; }
 &.is-open {display: block;}
-@media screen and (min-width: $tablet) {
-max-height: 80px;
-}
+
 }
 
 
@@ -136,6 +134,7 @@ max-height: 80px;
 .adres-nav {@extend %ul;
     @extend %margin;
 @media screen and (min-width: $desktop) {
+
 display: flex;    
 }
 @media screen and (min-width: $desktop) {
