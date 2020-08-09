@@ -6,15 +6,22 @@
         text-align: center;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
         background-repeat: no-repeat;
-        background-color: gray;
+        background-color: gray; 
 
-        .baner {padding-top: 200px;
+  
+
+      .baner {
             margin-top: 0;
             margin-bottom: 0;
-              font-size: 44px;
-              line-height: 1.36;
-              color: $button-text-active;
-              text-transform: uppercase;}
+            color: $button-text-active;
+            text-transform: uppercase;
+     @media screen and (max-width: 1199px) {
+       font-size: 26px;  
+     }}
+    
+
+
+
 
         .btn-start {
                 display: inline-block;
