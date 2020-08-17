@@ -23,6 +23,7 @@ margin-right: auto;
 @media screen and (min-width: $tablet) {
     width: $tablet;
     justify-content: flex-start;
+    align-items: center;
     
 }
 @media screen and (min-width: $desktop) {
@@ -115,7 +116,8 @@ background-color: $primary-fon;
 
 .item {
     font-family: $rimary-font;
-    font-weight: 700;
+    font-weight: 500px;
+
     line-height: 1.14;
 }
 
@@ -142,7 +144,8 @@ margin-left: 305px;
 }}
 
 .adres-item {  font-family: $rimary-font;
-    font-weight: bold;
+    font-weight: 500px;
+    line-height: 1.14;
 @media screen and (max-width: $tablet) {
  font-size: 18px;
  & + & {margin-top: 40px;}

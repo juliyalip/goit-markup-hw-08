@@ -1,29 +1,41 @@
 .fon-baner {
-    max-width: 1600px;
-    height: 600px;
+  max-width: 1600px;
+  height: 600px;
     margin-left: auto; 
     margin-right: auto;
         text-align: center;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
+        background-size: 1600px 600px;
         background-repeat: no-repeat;
-        background-color: gray; 
+        background-color: gray; }
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+      .fon-baner { background-image: url(../images/Header@2x.jpg)} }
+  
+  
+    
 
   
 
-      .baner {
+.baner {
             margin-top: 0;
             margin-bottom: 0;
-            color: $button-text-active;
+            color: red;
             text-transform: uppercase;
      @media screen and (max-width: 1199px) {
        font-size: 26px;  
-     }}
+     }
+    @media screen and (min-width: $desktop) {
+      font-size: 26px;
+    }}
+
     
 
 
 
 
-        .btn-start {
+.btn-start {
                 display: inline-block;
                 background-color: $active-button-color;
                 border-radius: 4px;
@@ -34,4 +46,3 @@
                 line-height: 1.9;
                 margin-top: 30px;
                 margin-bottom: 200px;}
-}
