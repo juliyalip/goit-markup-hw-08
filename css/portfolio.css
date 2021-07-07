@@ -381,7 +381,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -611,7 +610,7 @@ img {
 
 .adres-item {
   font-family: Roboto, sans-serif;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 1.14;
 }
 

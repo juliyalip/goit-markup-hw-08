@@ -1,85 +1,86 @@
-.title-advantage {@extend %transparent;}
-
-
+.title-advantage {
+  @extend %transparent;
+}
 
 .container-advanges {
-padding-left: 15px;
-padding-right: 15px;
-margin-left: auto;
-margin-right: auto;
-@media screen and (min-width: $mobile) {
-  width: $mobile;  
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
-@media screen and (min-width: $tablet) {
- width: $tablet;   
-}
-@media screen and (min-width: $desktop) {
- width: $desktop;   
-}
-}
-
 
 .advantages {
-    padding-left: 0;
-    margin-top: 60px;
-margin-bottom: 60px;
-justify-content: center;
-@media screen and (max-width: $tablet) {
- text-align: center;   
+  padding-left: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
+  @media screen and (max-width: $tablet) {
+    text-align: center;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    @media screen and (max-width: 1199px) {
+      flex-wrap: wrap;
+    }
+  }
 }
-@media screen and (min-width: $tablet) {
- display: flex; 
-@media screen and (max-width: 1199px) {
-    flex-wrap: wrap;   }   
+
+.advantages-list {
+  width: 100%;
+  @media screen and (min-width: $mobile) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: calc((100% - 90px) / 4);
+      & + & {
+        margin-left: 30px;
+      }
+    }
+  }
 }
-}
-
-
-.advantages-list {width: 100%; 
-@media screen and (min-width: $mobile) {
-&:not(:last-child) {margin-bottom: 30px;}    
-}
-@media screen and (min-width: $tablet) {
- width: calc((100% - 30px) / 2);   
- &:not(:nth-child(2n)) {margin-right: 30px;}
- &:nth-last-child(-n+2) {margin-bottom: 0;}
-
-@media screen and (min-width: $desktop) {
- width: calc((100% - 90px) / 4);  
- & + &  {margin-left: 30px;} 
-} } }
-
-
-
-
-
 
 .fon-advantage {
-    @include centerFlex;
-    height: 120px;
-background-color: #F5F4FA;
-width: 100%;
+  @include centerFlex;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  width: 100%;
 }
 
-.title-advantages {margin-top: 30px;
-    margin-bottom: 0;
-
-} 
-
+.title-advantages {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
 
 .zaglawn {
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.14;
-          }
-
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.14;
+}
 
 .text-pole {
-            line-height: 1.7;
-        color: $style-text-color;
-        margin-top: 10px;
-        margin-bottom: 0;
-         }   
-
-
-
+  line-height: 1.7;
+  color: $style-text-color;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
