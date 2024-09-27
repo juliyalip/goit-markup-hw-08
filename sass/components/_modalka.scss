@@ -91,7 +91,7 @@
   }
 }
 
-.form {
+.section-form {
   position: relative;
   margin-bottom: 28px;
 
@@ -164,7 +164,7 @@ input:focus {
 .coment:focus + .label-coment,
 .coment:not(:placeholder-shown) + .label-coment {
   color: $active-button-color;
-  transform: translateY(-40px);
+  transform: translateY(-33px);
 }
 
 .label-coment {
@@ -174,7 +174,7 @@ input:focus {
   transition: transform $transition-valuse;
 }
 
-.dogovor {
+.agreement {
   @include centerFlex;
   margin-top: 20px;
 
@@ -186,7 +186,7 @@ input:focus {
   }
 }
 
-.dogovor a {
+.agreement a {
   color: $active-text-color;
   margin-left: 3px;
 
@@ -224,9 +224,8 @@ input:focus {
   background-size: contain;
 }
 
-.modal-batton {
-  margin-left: auto;
-  margin-right: auto;
+.modal-button {
+  display: block;
   padding: 10px 55px;
   background-color: $active-button-color;
   color: $button-text-active;
@@ -235,7 +234,7 @@ input:focus {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-bottom: 40px;
-  left: 50%;
-  transform: translateX(50%);
+  margin-left: auto;
+  margin-right: auto;
   background-origin: content-box;
 }

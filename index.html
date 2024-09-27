@@ -48,10 +48,10 @@
  <main>
     <section class="fon-baner">
         <h1 class="baner">Effective decisions<br>for your business</h1>
-        <a href="#" class="btn-start" data-modal-open>order a service</a>
+        <a href="#" class="btn-start" data-modal-open>Submit</a>
     </section>
 
-    <!-- Modalnoe okno-->
+    <!-- Modal window-->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <span class="close" data-modal-close>
@@ -60,60 +60,56 @@
         </svg>
         </span>
         <b class="modal-title">Leave your details and we'll call you back</b>
-        <div class="form">
-            <form>
+        <form>
+        <div class="section-form">
+           
                 <input type="text" name="name" id="name" class="input-form" placeholder=" " autocomplete="on">
                 <label for="name" class="label-form">Name</label>
                 <svg class="icon-modal">
                     <use href="./images/symbol-defs.svg#name"></use>
                 </svg>
-            </form>
+           
         </div>
                
-         <div class="form">
-                <form>
+         <div class="section-form">
+           
                      <input type="tel" name="tel" id="tel" class="input-form" placeholder=" " autocomplete="on">
                      <label for="tel" class="label-form">Phone</label>
                      <svg width="13px" height="13px" class="icon-modal">
                          <use href="./images/symbol-defs.svg#tel"></use>
                      </svg>
-                </form>
+                
             </div>
         
-           <div class="form">
-            <form>
+           <div class="section-form">
+          
                 <input type="email" name="mail" id="mail" class="input-form" placeholder=" " autocomplete="on"> 
-                <label for="mail" class="label-form">Почта</label>
+                <label for="mail" class="label-form">e-mail</label>
                 <svg class="icon-modal">
                     <use href="./images/symbol-defs.svg#mail"></use>
                 </svg>
-            </form>
+           
            </div>
         
           <div class="form-coment">
-            <form>
+            
                 <textarea name="coment" id="coment" class="coment" placeholder=" "></textarea>
                 <label for="coment" class="label-coment">Comment</label>
-            </form>
+          
           </div>
-             
-          <form class="dogovor">
+      
+          <div class="agreement">
                 <input type="checkbox" class="checkbox" name="checkbox" value="checkbox" id="checkbox"/>
                 <label for="checkbox" class="check-label">
-                    I agree with the mailing list and accept <a href="">Terms of the agreement</a>
-            </label>
+                    I agree with the mailing list and accept <a href="#">Terms of the agreement</a>
+                </div>
           </form>
-
-           <button type="submit" class="modal-batton">Submit</button>
-       
-
+      
+           <button type="submit" class="modal-button">Submit</button>
+        </form>
     </div>
 
 </div>
-
-
-
-
                      <!-- Our advantages -->
         <section> 
               <div class="container-advanges">
@@ -194,7 +190,7 @@
     </div>
    
              <!--Staff Team-->
-        <section class="komanda">
+        <section class="team">
                     <div class="container">
                         <p class="title-section"><strong>Our team</strong></p>
             <ul class="partner">
@@ -421,12 +417,7 @@
             </ul>       
         </div>
         </section>
-
-
-
-
-
-        
+      
      <section class="center-text transparent-klientu">
         <div class="container">
        <h4 class="title-section"><strong>Our regular customers</strong></h4>
@@ -463,15 +454,10 @@
     </div>       
     </section>
 
-
-
-
  </main>
 
      <footer>
-
     <div class="container">
-
     <div class="container-foter">
           <div>
             <a href="#" class="logo-navigac"><span>Web</span>Studio</a>
