@@ -437,8 +437,9 @@ img {
 .menu-button {
   display: inline-block;
   padding: 0;
-  border: 1px solid grey;
+  border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -458,8 +459,10 @@ img {
   display: none;
 }
 
-.icon-cross:hover, .icon-cross:focus,
-.icon-menu:hover, .icon-menu:focus {
+.icon-cross:hover,
+.icon-cross:focus,
+.icon-menu:hover,
+.icon-menu:focus {
   fill: #2196F3;
 }
 

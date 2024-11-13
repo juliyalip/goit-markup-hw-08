@@ -437,8 +437,9 @@ img {
 .menu-button {
   display: inline-block;
   padding: 0;
-  border: 1px solid grey;
+  border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -458,8 +459,10 @@ img {
   display: none;
 }
 
-.icon-cross:hover, .icon-cross:focus,
-.icon-menu:hover, .icon-menu:focus {
+.icon-cross:hover,
+.icon-cross:focus,
+.icon-menu:hover,
+.icon-menu:focus {
   fill: #2196F3;
 }
 
@@ -626,15 +629,15 @@ span {
   max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../images/Header.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Header.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-color: gray;
 }
 @media screen and (min-width: 480px) {
   .fon-baner {
     width: 480px;
-    height: 400px;
+    height: 300px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -644,7 +647,7 @@ span {
 }
 @media screen and (min-width: 1200px) {
   .fon-baner {
-    width: 1600px;
+    width: 1200px;
     height: 600px;
   }
 }
@@ -654,17 +657,27 @@ span {
   margin-bottom: 0;
   color: #F5F4FA;
   text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 50px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .baner {
-    padding-top: 118px;
-    font-size: 26px;
+    width: 480px;
+    padding-top: 120px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .baner {
+    width: 768px;
+    padding-top: 150px;
+    font-size: 22px;
   }
 }
 @media screen and (min-width: 1200px) {
   .baner {
+    width: 1200px;
     font-size: 44px;
-    padding-top: 200px;
   }
 }
 
@@ -673,11 +686,19 @@ span {
   background-color: #2196F3;
   border-radius: 4px;
   color: #FFFFFF;
-  padding: 10px 32px;
-  font-size: 16px;
-  font-weight: 700;
+  padding: 4px 15px;
+  font-size: 12px;
+  font-weight: 400;
   line-height: 1.9;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .btn-start {
+    padding: 10px 32px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 .container-advanges {
