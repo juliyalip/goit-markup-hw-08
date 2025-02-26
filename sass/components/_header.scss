@@ -62,8 +62,11 @@
     fill: #2196F3;
 }
 
+.icon-mail{
+    margin-right: 8px;
+}
+
 .menu-mobile {
-    text-align: center;
     background-color: $primary-fon;
 
     @media screen and (max-width: 767px) {
@@ -115,8 +118,11 @@
 .contact {
     color: $style-text-color;
     fill: $style-text-color;
+    display: flex;
+    align-items: center;
     transition: fill $transition-valuse,
         color $transition-valuse;
+
 
     &:hover,
     &:focus {
@@ -165,11 +171,15 @@
 
 .adres-nav {
     @extend %ul;
-    @extend %margin;
+ 
+    @media screen and (min-width: $tablet) {
+        margin-left: 84px;
+
+    }
 
     @media screen and (min-width: $desktop) {
-
         display: flex;
+
     }
 
     @media screen and (min-width: $desktop) {
@@ -193,15 +203,22 @@
     }
 
     @media screen and (min-width: $tablet) {
-        margin-left: 84px;
         font-size: 12px;
-
         line-height: 1.17;
+
+    }
+
+    @media screen and (max-width: $desktop) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
     }
 
     @media screen and (min-width: $desktop) {
         &+& {
             margin-left: 30px;
+
         }
 
     }
